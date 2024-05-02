@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Survey Results</title>
+</head>
+<body>
+<h1>Survey Results</h1>
+<br>
+<h2>Thank you for taking the survey : {{ @SESSION.name }}</h2>
+<br>
+<h2>Responses:</h2>
+<br>
+<ul>
+    {{ @SESSION.easy}}
+    <br>
+    {{ @SESSION.like }}
+    <br>
+    {{ @SESSION.monday}}
+    <br>
+</ul>
+</body>
+</html>

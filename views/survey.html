@@ -3,35 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>survey</title>
+          content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
 </head>
 <body>
 <h1>Midterm Survey</h1>
-<br>
-<form action="">
-    <label for="name">Name <input type="text"></label>
-
-    <br>
-    <br>
-    <label for="">check all that apply
-        <br>
+<form method="POST" action="survey">
+    <label for="name">Name: <input type="text" id="name" name="name"></label><br><br>
+    <label>Check all that apply:<br>
         <input type="checkbox" id="checkbox1" name="checkbox1">
-        <label for="checkbox1">this midterm is easy</label><br>
-        <br>
-        <!-- Checkbox 2 -->
+        <label for="checkbox1">This midterm is easy</label><br>
         <input type="checkbox" id="checkbox2" name="checkbox2">
         <label for="checkbox2">I like midterm</label><br>
-        <br>
-        <!-- Checkbox 3 -->
         <input type="checkbox" id="checkbox3" name="checkbox3">
-        <label for="checkbox3">Today is Monday</label><br>
-    </label>
+        <label for="checkbox3">Today is Monday</label>
+    </label><br><br>
     <button type="submit">Submit</button>
 </form>
-
-
-
 </body>
 </html>
